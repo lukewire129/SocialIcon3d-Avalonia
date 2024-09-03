@@ -1,0 +1,75 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:icon="clr-namespace:SocialIcon.Icon;assembly=SocialIcon.Icon"
+        xmlns:avalonia="https://github.com/projektanker/icons.avalonia"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="450"
+        x:Class="SocialIcon.MainWindow" Background="Black">
+    <Window.Resources>
+        <SolidColorBrush x:Key="FaceBook">#4362a5</SolidColorBrush>
+        <SolidColorBrush x:Key="Twitter">#1ca0f3</SolidColorBrush>
+        <SolidColorBrush x:Key="instagram">#923b59</SolidColorBrush>
+        <SolidColorBrush x:Key="linkedin">#2669b2</SolidColorBrush>
+        <SolidColorBrush x:Key="youtube">#ff0000</SolidColorBrush>
+    </Window.Resources>
+    
+    <Window.Styles>
+        <Style Selector="avalonia|Icon.size">
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+        <Style Selector="avalonia|Icon.facebook">
+            <Setter Property="Value" Value="fa-brands fa-facebook"/>
+            <Setter Property="Foreground" Value="{StaticResource FaceBook}"/>
+        </Style>
+        <Style Selector="icon|Icon3D.facebook">
+            <Setter Property="BorderBrush" Value="{StaticResource FaceBook}"/>
+        </Style>
+        <Style Selector="avalonia|Icon.twitter">
+            <Setter Property="Value" Value="fa-brands fa-twitter"/>
+            <Setter Property="Foreground" Value="{StaticResource Twitter}"/>
+        </Style>
+        <Style Selector="icon|Icon3D.twitter">
+            <Setter Property="BorderBrush" Value="{StaticResource Twitter}"/>
+        </Style>
+        <Style Selector="avalonia|Icon.instagram">
+            <Setter Property="Value" Value="fa-brands fa-instagram"/>
+            <Setter Property="Foreground" Value="{StaticResource instagram}"/>
+        </Style>
+        <Style Selector="icon|Icon3D.instagram">
+            <Setter Property="BorderBrush" Value="{StaticResource instagram}"/>
+        </Style>
+        <Style Selector="avalonia|Icon.linkedin">
+            <Setter Property="Value" Value="fa-brands fa-linkedin"/>
+            <Setter Property="Foreground" Value="{StaticResource linkedin}"/>
+        </Style>
+        <Style Selector="icon|Icon3D.linkedin">
+            <Setter Property="BorderBrush" Value="{StaticResource linkedin}"/>
+        </Style>
+        <Style Selector="avalonia|Icon.youtube">
+            <Setter Property="Value" Value="fa-brands fa-youtube"/>
+            <Setter Property="Foreground" Value="{StaticResource youtube}"/>
+        </Style>
+        <Style Selector="icon|Icon3D.youtube">
+            <Setter Property="BorderBrush" Value="{StaticResource youtube}"/>
+        </Style>
+    </Window.Styles>
+    
+    <StackPanel Orientation="Horizontal" Spacing="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <icon:Icon3D Classes="facebook">
+            <avalonia:Icon Classes="facebook size" />
+        </icon:Icon3D>
+        <icon:Icon3D  Classes="twitter">
+            <avalonia:Icon Classes="twitter size" />
+        </icon:Icon3D>
+        <icon:Icon3D Classes="instagram">
+            <avalonia:Icon Classes="instagram size" />
+        </icon:Icon3D>
+        <icon:Icon3D Classes="linkedin" >
+            <avalonia:Icon Classes="linkedin size" />
+        </icon:Icon3D>
+        <icon:Icon3D Classes="youtube">
+            <avalonia:Icon Classes="youtube size" />
+        </icon:Icon3D>
+    </StackPanel>
+</Window>
