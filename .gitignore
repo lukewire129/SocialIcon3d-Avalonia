@@ -668,7 +668,8 @@ fabric.properties
 # Windows Installer files from build outputs
 
 # JetBrains Rider
-
+# .gitignore 파일
+*.idea
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
